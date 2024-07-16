@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: commerce-frontend
+    buildCommand: npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: NODE_ENV
+        value: production
