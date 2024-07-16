@@ -21,7 +21,7 @@ const registerMutation = useMutation({
   },
 
   onSuccess: (mutation) => {
-    router.push("/login");
+    router.push("/");
     $q.notify({
       type: "positive",
       message: "Accounted created successfully, please login",
