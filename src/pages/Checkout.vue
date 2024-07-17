@@ -28,6 +28,7 @@ const createOrderMutation = useMutation({
   },
   onSuccess: async (data, mutation) => {
     $q.notify({ type: "positive", message: "Order created" });
+    store.dispatch("clearUser");
     router.replace("/products");
   },
   onError: async (error, mutation) => {
